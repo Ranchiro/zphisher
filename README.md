@@ -1,189 +1,123 @@
-Certainly! Here's a customized version of the Zphisher README tailored for your GitHub profile, with your name and repository link:
+<div align="center">
+
+# 🎭 Zphisher
+
+### Advanced Phishing Toolkit for Security Research
+
+[![Version](https://img.shields.io/badge/Version-2.3.5-green?style=for-the-badge)]()
+[![Bash](https://img.shields.io/badge/Written_In-Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)]()
+[![Purpose](https://img.shields.io/badge/Purpose-Educational-blue?style=for-the-badge)]()
+[![Maintained](https://img.shields.io/badge/Maintained-Yes-success?style=for-the-badge)]()
+
+<p align="center">
+  <strong>A beginner-friendly, automated phishing toolkit with 30+ templates</strong><br/>
+  Featuring tunneling support for educational and security research purposes.
+</p>
 
 ---
 
-<!-- Zphisher -->
+</div>
 
-<p align="center">
-  <img src=".github/misc/logo.png">
-</p>
+## ⚠️ Disclaimer
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Version-2.3.5-green?style=for-the-badge">
-  <img src="https://img.shields.io/github/license/Ranchiro/zphisher?style=for-the-badge">
-  <img src="https://img.shields.io/github/stars/Ranchiro/zphisher?style=for-the-badge">
-  <img src="https://img.shields.io/github/issues/Ranchiro/zphisher?color=red&style=for-the-badge">
-  <img src="https://img.shields.io/github/forks/Ranchiro/zphisher?color=teal&style=for-the-badge">
-</p>
+> **🚨 WARNING: This tool is for EDUCATIONAL PURPOSES ONLY!**
+>
+> - Any actions using Zphisher are solely YOUR responsibility
+> - Misuse can result in **criminal charges**
+> - Contributors are NOT responsible for any misuse
+> - Always obtain proper authorization before testing
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Author-Ranchiro-blue?style=flat-square">
-  <img src="https://img.shields.io/badge/Open%20Source-Yes-darkgreen?style=flat-square">
-  <img src="https://img.shields.io/badge/Maintained%3F-Yes-lightblue?style=flat-square">
-  <img src="https://img.shields.io/badge/Written%20In-Bash-darkcyan?style=flat-square">
-  <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FRanchiro%2Fzphisher&title=Visitors&edge_flat=false"/>
-</p>
+## ✨ Features
 
-<p align="center"><b>A beginner-friendly, automated phishing tool with 30+ templates.</b></p>
+| Feature | Description |
+|---------|-------------|
+| 🎭 **30+ Templates** | Pre-built phishing pages for major platforms |
+| 🌐 **Tunneling Support** | Built-in ngrok, cloudflared, and LocalXpose |
+| 📧 **OTP Support** | Advanced credential capture with OTP |
+| 🔗 **URL Masking** | Custom URL masking capabilities |
+| 📱 **Docker Ready** | Easy deployment with Docker |
+| 🎯 **Beginner Friendly** | Simple CLI interface |
 
-##
+## 🛠️ Supported Platforms
 
-### Disclaimer
+<div align="center">
 
-<i>Any actions and activities related to <b>Zphisher</b> are solely your responsibility. The misuse of this toolkit can result in <b>criminal charges</b> against the persons involved. <b>The contributors will not be held responsible</b> for any misuse of this toolkit.
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Termux](https://img.shields.io/badge/Termux-000000?style=flat-square&logo=termux&logoColor=white)
+![macOS](https://img.shields.io/badge/macOS-000000?style=flat-square&logo=apple&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 
-<b>This toolkit contains materials that can be potentially damaging or dangerous for social media.</b> Refer to the laws in your province/country before accessing or using this in any unauthorized way.
+</div>
 
-<b>This tool is made for educational purposes only.</b> Do not attempt to violate the law with anything contained here. <b>If this is your intention, then exit immediately!</b>
-
-It only demonstrates "how phishing works". <b>You shall not misuse the information to gain unauthorized access to someone's social media.</b> Use at your own risk.</i>
-
-##
-
-### Features
-
-* Latest and updated login pages.
-* Beginner-friendly interface.
-* Multiple tunneling options:
-
-  * Localhost
-  * Cloudflared
-  * LocalXpose
-* URL masking support.
-* Docker support.
-
-##
+## 🚀 Quick Start
 
 ### Installation
 
-* Clone this repository:
+```bash
+# Clone the repository
+git clone https://github.com/Ranchiro/zphisher.git
+cd zphisher
 
-  ```
-  git clone --depth=1 https://github.com/Ranchiro/zphisher.git
-  ```
+# Make executable
+chmod +x zphisher.sh
 
-* Navigate to the cloned directory and run `zphisher.sh`:
-
-  ```
-  cd zphisher
-  bash zphisher.sh
-  ```
-
-* On the first launch, it will install the necessary dependencies. After that, ***Zphisher*** is ready to use.
-
-##
-
-### Installation (Termux)
-
-You can easily install Zphisher in Termux using tur-repo:
-
-```
-pkg install tur-repo
-pkg install zphisher
-zphisher
+# Run
+./zphisher.sh
 ```
 
-### Note:
+### Docker Installation
 
-***Termux discourages hacking.*** Avoid discussing anything related to *Zphisher* in Termux discussion groups. For more information, check the [Termux Wiki](https://wiki.termux.com/wiki/Hacking).
+```bash
+# Build image
+docker build -t zphisher .
 
-##
+# Run container
+docker run -it zphisher
+```
 
-### Installation via ".deb" file
+## 📸 Available Templates
 
-* Download `.deb` files from the [**Latest Release**](https://github.com/Ranchiro/zphisher/releases/latest).
+| Category | Platforms |
+|----------|----------|
+| 📱 Social | Facebook, Instagram, Twitter, TikTok, Snapchat |
+| 📧 Email | Gmail, Yahoo, Outlook, Protonmail |
+| 🎮 Gaming | Steam, PlayStation, Xbox, Epic Games |
+| 💰 Finance | PayPal, Stripe, Cryptocurrency |
+| 🔐 Others | Netflix, Spotify, GitHub, Discord |
 
-* If you are using ***Termux***, download the `*_termux.deb` file.
+## 📁 Project Structure
 
-* Install the `.deb` file by executing:
+```
+zphisher/
+├── zphisher.sh         # Main script
+├── Dockerfile          # Docker configuration
+├── make-deb.sh         # Debian package builder
+├── run-docker.sh       # Docker runner
+└── README.md           # Documentation
+```
 
-  ```
-  apt install <your path to deb file>
-  ```
+## 🛡️ Legal & Ethical Usage
 
-  Or:
+- ✅ Security awareness training
+- ✅ Authorized penetration testing
+- ✅ Educational research
+- ❌ Unauthorized access attempts
+- ❌ Stealing credentials without consent
+- ❌ Any malicious activities
 
-  ```
-  dpkg -i <your path to deb file>
-  apt install -f
-  ```
+## 👨‍💻 Author
 
-##
+<div align="center">
 
-### Run on Docker
+**Ruchir Ganatra**
 
-* Docker Image Mirror:
+[![GitHub](https://img.shields.io/badge/GitHub-Ranchiro-181717?style=for-the-badge&logo=github)](https://github.com/Ranchiro)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/ruchir-ganatra)
 
-  * **DockerHub**:
-
-    ```
-    docker pull ranchiro/zphisher
-    ```
-  * **GHCR**:
-
-    ```
-    docker pull ghcr.io/ranchiro/zphisher:latest
-    ```
-
-* Using the wrapper script [**run-docker.sh**](https://raw.githubusercontent.com/Ranchiro/zphisher/master/run-docker.sh):
-
-  ```
-  curl -LO https://raw.githubusercontent.com/Ranchiro/zphisher/master/run-docker.sh
-  bash run-docker.sh
-  ```
-
-* Temporary Container:
-
-  ```
-  docker run --rm -ti ranchiro/zphisher
-  ```
-
-  * Remember to mount the `auth` directory.
-
-##
-
-<details>
-  <summary><h3>Dependencies</h3></summary>
-
-<b>Zphisher</b> requires the following programs to run properly:
-
-* `git`
-* `curl`
-* `php`
-
-> All dependencies will be installed automatically when you run **Zphisher** for the first time.
-
-</details>
-
-<details>
-  <summary><h3>Tested on</h3></summary>
-
-* **Ubuntu**
-* **Debian**
-* **Arch**
-* **Manjaro**
-* **Fedora**
-* **Termux**
-
-</details>
-
-##
-
-<h3 align="center"><i>:: Workflow ::</i></h3>
-<p align="center">
-<img src=".github/misc/workflow.gif"/>
-</p>
-
-##
-
-### Find Me on:
-
-<p align="left">
-  <a href="https://github.com/Ranchiro" target="_blank"><img src="https://img.shields.io/badge/Github-blue?style=for-the-badge&logo=github"></a>
-</p>
+</div>
 
 ---
 
-**Note:** This tool is intended for educational purposes only. Unauthorized use is prohibited.
-
----
+<div align="center">
+  <sub>🎓 Created for security research and education</sub>
+</div>
